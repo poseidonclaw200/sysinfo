@@ -90,7 +90,7 @@ class SysInfoGUI:
     def create_overview_tab(self):
         """Overview tab"""
         canvas = tk.Canvas(self.overview_tab, bg="white", highlightthickness=0)
-        scrollbar = ttk.Scrollbar(self.overview_tab, orient="vertical", command=canvas.scroll)
+        scrollbar = ttk.Scrollbar(self.overview_tab, orient="vertical", command=canvas.yview)
         scrollable_frame = ttk.Frame(canvas)
         
         scrollable_frame.bind(
@@ -112,7 +112,7 @@ class SysInfoGUI:
     def create_cpu_tab(self):
         """CPU tab"""
         canvas = tk.Canvas(self.cpu_tab, bg="white", highlightthickness=0)
-        scrollbar = ttk.Scrollbar(self.cpu_tab, orient="vertical", command=canvas.scroll)
+        scrollbar = ttk.Scrollbar(self.cpu_tab, orient="vertical", command=canvas.yview)
         scrollable_frame = ttk.Frame(canvas)
         
         scrollable_frame.bind(
@@ -134,7 +134,7 @@ class SysInfoGUI:
     def create_memory_tab(self):
         """Memory tab"""
         canvas = tk.Canvas(self.memory_tab, bg="white", highlightthickness=0)
-        scrollbar = ttk.Scrollbar(self.memory_tab, orient="vertical", command=canvas.scroll)
+        scrollbar = ttk.Scrollbar(self.memory_tab, orient="vertical", command=canvas.yview)
         scrollable_frame = ttk.Frame(canvas)
         
         scrollable_frame.bind(
@@ -156,7 +156,7 @@ class SysInfoGUI:
     def create_disk_tab(self):
         """Disk tab"""
         canvas = tk.Canvas(self.disk_tab, bg="white", highlightthickness=0)
-        scrollbar = ttk.Scrollbar(self.disk_tab, orient="vertical", command=canvas.scroll)
+        scrollbar = ttk.Scrollbar(self.disk_tab, orient="vertical", command=canvas.yview)
         scrollable_frame = ttk.Frame(canvas)
         
         scrollable_frame.bind(
@@ -178,7 +178,7 @@ class SysInfoGUI:
     def create_network_tab(self):
         """Network tab"""
         canvas = tk.Canvas(self.network_tab, bg="white", highlightthickness=0)
-        scrollbar = ttk.Scrollbar(self.network_tab, orient="vertical", command=canvas.scroll)
+        scrollbar = ttk.Scrollbar(self.network_tab, orient="vertical", command=canvas.yview)
         scrollable_frame = ttk.Frame(canvas)
         
         scrollable_frame.bind(
@@ -200,7 +200,7 @@ class SysInfoGUI:
     def create_process_tab(self):
         """Process tab"""
         canvas = tk.Canvas(self.process_tab, bg="white", highlightthickness=0)
-        scrollbar = ttk.Scrollbar(self.process_tab, orient="vertical", command=canvas.scroll)
+        scrollbar = ttk.Scrollbar(self.process_tab, orient="vertical", command=canvas.yview)
         scrollable_frame = ttk.Frame(canvas)
         
         scrollable_frame.bind(
