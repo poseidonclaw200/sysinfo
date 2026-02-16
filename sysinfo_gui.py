@@ -19,9 +19,6 @@ class SysInfoGUI:
         self.root.geometry("1000x700")
         self.root.configure(bg="#f0f0f0")
         
-        # Set icon (optional)
-        self.root.iconphoto(False)
-        
         # Apply modern theme
         style = ttk.Style()
         style.theme_use('clam')
