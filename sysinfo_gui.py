@@ -75,12 +75,12 @@ class SysInfoGUI:
                                font=("Helvetica", 10, "bold"), cursor="hand2")
         refresh_btn.pack(side=tk.LEFT)
         
+        self.auto_refresh_var = tk.BooleanVar(value=False)
         auto_refresh = tk.Checkbutton(footer, text="Auto-refresh every 5s",
-                                     variable=tk.BooleanVar(value=False),
+                                     variable=self.auto_refresh_var,
                                      command=self.toggle_auto_refresh,
                                      font=("Helvetica", 9))
         auto_refresh.pack(side=tk.LEFT, padx=20)
-        self.auto_refresh_var = auto_refresh.var
         
         exit_btn = tk.Button(footer, text="Exit", command=self.root.quit,
                             bg="#cc0000", fg="white", padx=20, pady=5,
